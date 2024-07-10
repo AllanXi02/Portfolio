@@ -4,37 +4,37 @@ import "./Footer.css";
 function Footer({ setPage, theme }) {
   const footer_address = [
     {
-      name: "Home Link 1",
-      path: "/Pravacy.html",
+      name: "Current Project",
+      path: "/",
     },
     {
-      name: "Home Link 2",
-      path: "/about.html",
+      name: "Current Goal",
+      path: "/",
     },
     {
-      name: "About Link 1",
-      path: "/Seattle.html",
+      name: "Past Project",
+      path: "/",
     },
     {
-      name: "About Link 2",
-      path: "/Boston.html",
+      name: "Past Goal",
+      path: "/",
     },
 
   ];
 
   const footer_address2 = [
     {
-      name: "Home",
+      name: "Current",
       path: "/Home.html",
     },
     {
-      name: "About",
+      name: "Past",
       path: "/about.html",
     },
-    {
-      name: "Roses",
-      path: "/Roses.html",
-    },
+    // {
+    //   name: "Roses",
+    //   path: "/Roses.html",
+    // },
   ];
 
   const FooterFirstFunction = ({ footerProp }) => {
@@ -59,7 +59,7 @@ function Footer({ setPage, theme }) {
           <a className="footer-nav__address0" href="http://localhost:3000/"
             onClick={handleLogoClick}
           >
-            Rose
+            YUE XI 
           </a>
         </div>
         <ul className="footer-ul1">{li}</ul>
@@ -91,11 +91,11 @@ function Footer({ setPage, theme }) {
 
   const handleLogoClick = (e) => {
     e.preventDefault();
-    setPage("Home");
+    setPage("Personal Intro");
   };
 
   return (
-    <footer className="footer"  aria-label="footer OF Rose ">
+    <footer className="footer"  aria-label="footer OF YX ">
       <FooterFirstFunction footerProp={footer_address2} />
       <FooterSecondFunction footerProp={footer_address} />
     </footer>

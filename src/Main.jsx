@@ -14,14 +14,14 @@ function Main({ page, setPage,theme }) {
   return (
     <main className={`main ${theme}`} aria-label={`Rose main-page -  ${theme}`} >
      
-      {page === "Home Link 2" && < Homelink2/>}
-      {page === "Home Link 1" && < Homelink1/>}
-      {page === "About Link 2" && <Aboutlinke2/>}
-      {page === "About Link 1" && < AboutSub1 />}
+      {page === "Current Goal" && < Homelink2/>}
+      {page === "Current Project" && < Homelink1/>}
+      {page === "Past Goal" && <Aboutlinke2/>}
+      {page === "Past Project" && < AboutSub1 />}
 
-      {page === "Home" && <Home />}
-      {page === "About" && <About />}
-      {page === "Roses" && <Roses page={page} setPage={setPage} />}
+      {page === "Current" && <Home />}
+      {page === "Past" && <About />}
+      {page === "Personal Intro" && <Roses page={page} setPage={setPage} />}
     </main>
   );
 }

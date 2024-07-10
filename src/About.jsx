@@ -3,16 +3,17 @@ import "./About.css";
 function About() {
   return (
     <div className="about" aria-label="History OF Rose ">
-      <h2 className="about__title">History of Roses</h2>
+      <h2 className="about__title">Past Intro - Project and goals - 这个主题变色没找到, 但是已经可以了 </h2>
       <p className="about__description">
       
-
- The rose family dates back to over 30 million years ago. Though the flowers have evolved to sport natural beauty, easy hybridization between species made them a popular target for cultivation. Starting around 5,000 years ago, Chinese gardeners began to experiment with rose breeding. However, it wasn’t until the 18th century that these rose breeds made their way to Europe.
- 
+        简历的实习一个, 过往的 项目介绍和过往经历 - 对于AVP - AI绘图 
+        - 前沿项目(兴趣爱好栏)
+        传统项目 - - 图像识别 - RPC - 微服务 - 前端(可以省略,因为这个SPA很类似)
+       
       </p>
       <p className="about__description">
-      The middle east was another popping center for roses, and they were grown extensively there during the Roman empire. The flowers kept gaining popularity throughout history and even became incorporated in religious use during the Middle Ages.
-
+      Link1 可以删除,  link2 可以加入一下 生活图片 / Rose 第三个subheader 可以用来进行一个 项目的 链接展示 Home link1 也可以用一来展示 前沿项目(兴趣爱好栏), 这个效果还蛮好的
+      传统项目  就用   Rose 第三个subheader 可以用来进行一个 项目的 链接展示
       </p>  </div>
   );
 }

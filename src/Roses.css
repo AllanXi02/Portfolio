@@ -1,118 +1,71 @@
-/* Light mode CSS */
 .roses {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
-  padding: 1rem;
-  margin: 0 auto;
-  max-width: 960px;
-  background-color: antiquewhite;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.main {
-  background-color: bisque;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
 }
 
 .rose {
-  grid-column: span 12;
-  border: 1rem solid beige;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: white;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
+  flex: 1 1 30%;
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
 .rose:hover {
-  transform: translateY(-5px) translateX(-5px) translateZ(-51px);
+  transform: scale(1.05);
 }
 
-.rose img {
-  width: 30%;
+.home__image {
+  width: 100%;
   height: auto;
-  object-fit: cover;
-}
-
- 
-
-.rose p {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  color: #666;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .roses-link {
-  color: black;
   text-decoration: none;
-  font-family: cursive;
+  color: #2980b9;
+  font-weight: bold;
 }
 
-@media (min-width: 40rem) {
-  .Cats {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.personal-intro {
+  flex: 1 1 100%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-@media (min-width: 44rem) {
-  .Cats {
-    gap: 2rem;
-  }
-
-  .rose {
-    grid-column: span 4;
-    grid-row: span 3;
-    padding: 2rem;
-    text-align: left;
-  }
-
-  .rose h2 {
-    margin-top: 0;
-  }
-
-  .rose p {
-    margin-bottom: 1.5rem;
-  }
-
-  .rose img {
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-  }
-}
-
-/* Dark mode CSS styles for Roses */
-.dark .rose {
-  /* rgba(233, 209, 179, 0.937) */
-  background-color: gainsboro;
-  border-color: gray;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
-.dark .roses {
-  background-color: gainsboro;
-
-}
-
-.dark .roses-link {
-   text-decoration: none;
+.about__title {
   font-family: "Lucida Handwriting", cursive;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
 }
 
-.dark .rose h2 {
-  color: #ccc;
+.about__description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  color: #333;
+  /* #686D76 */
 }
 
-.dark .rose p {
-  color: #aaa;
+.dark .about__title {
+  font-size: 2.7rem;
+  color: #FFD35A
 }
 
-.dark .main {
-  background-color: #444;
+.dark  .about__description {
+  font-size: 1.2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:    #686D76;
 }

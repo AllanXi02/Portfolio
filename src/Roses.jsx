@@ -1,5 +1,4 @@
 import "./Roses.css";
-import Home from "./Home.jsx";
 
 
 function Roses({ page, setPage }) {
@@ -17,10 +16,10 @@ function Roses({ page, setPage }) {
          href={`${page}.html`}
          onClick={(e) => {
            e.preventDefault();
-           setPage("Home");
+           setPage("Past Project");
          }}
        >
-         click to home
+        Past Projects
        </a>
      </div>
    );
@@ -38,10 +37,11 @@ function Roses({ page, setPage }) {
          href={`${page}.html`}
          onClick={(e) => {
            e.preventDefault();
-           setPage("About");
+           setPage("Current");
          }}
        >
-        Rose History
+       Current Intro - Project and goals
+
        </a>
      </div>
    );
@@ -59,10 +59,11 @@ function Roses({ page, setPage }) {
          href={`${page}.html`}
          onClick={(e) => {
            e.preventDefault();
-           setPage("About Link 1");
+           setPage("Past");
          }}
        >
-        Rose Uses
+        Past Intro - Project and goals 
+ 
        </a>
      </div>
    );
@@ -84,10 +85,10 @@ function Roses({ page, setPage }) {
          href={`${page}.html`}
          onClick={(e) => {
            e.preventDefault();
-           setPage("Home Link 1");
+           setPage("Current Project");
          }}
        >
-        Rose Kinds
+        AVP - AI绘图 - 前沿项目  
        </a>
      </div>
    );
@@ -108,10 +109,11 @@ function Roses({ page, setPage }) {
          href={`${page}.html`}
          onClick={(e) => {
            e.preventDefault();
-           setPage("About Link 2");
+           setPage("Current Goal");
          }}
        >
-        Beautiful pics
+        Belief in AI, VR, and Blockchain 
+
        </a>
      </div>
    );
@@ -129,26 +131,43 @@ function Roses({ page, setPage }) {
          href={`${page}.html`}
          onClick={(e) => {
            e.preventDefault();
-           setPage("Home Link 2");
+           setPage("Past Goal");
          }}
        >
-        Register
+         Past Projects' Reflection and Future Directions
+
        </a>
      </div>
    );
  };
+ const PersonalIntro = () => {
+  return (
+    <div className="personal-intro">
+      <h2 className="about__title">About Me</h2>
+      <p className="about__description">
+        Hello! I'm Yue(Allan) Xi, a passionate developer with a keen interest in AI, VR, and Blockchain technologies. Over the years, I've worked on various projects that span traditional RPC systems, microservices architecture, image recognition, and mobile applications. My journey has been one of continuous learning and adaptation, constantly seeking to understand the deeper intricacies of the technologies I work with.
+      </p>
+      <p className="about__description">
+        My projects are not just about using cutting-edge technologies, but about mastering the fundamental concepts that drive them. I've always believed in the power of small, core functionality projects to truly grasp the essence of any technology. This approach has allowed me to understand not just how to use these technologies, but also the underlying principles that make them work.
+      </p>
+      <p className="about__description">
+        However, I acknowledge that there is still much to learn, particularly in terms of real-world experience. The practical application of these technologies in industrial projects requires hands-on experience and an understanding of best practices. As I continue to hone my skills, I look forward to gaining more experience and making meaningful contributions to the field.
+      </p>
+    </div>
+  );
+};
  return (
    <div className="roses">
- 
-     {page === "Home" && <Home />}
-     {page === "Roses" && <Rose />}
-     {page === "Roses" && <Rose2 />}
-     {page === "Roses" && <Rose3 />}
+    {page === "Personal Intro" && <PersonalIntro />}
+
+     {page === "Personal Intro" && <Rose2 />}
+     {page === "Personal Intro" && <Rose3 />}
 
 
-     {page === "Roses" && <Rose4 />}
-     {page === "Roses" && <Rose5 />}
-     {page === "Roses" && <Rose6 />}
+     {page === "Personal Intro" && <Rose4 />}
+     {page === "Personal Intro" && <Rose5 />}
+     {page === "Personal Intro" && <Rose6 />}
+     {page === "Personal Intro" && <Rose />}
 
 
    </div>

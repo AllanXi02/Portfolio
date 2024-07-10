@@ -30,6 +30,10 @@
   color: palevioletred;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+.dark .footer-nav__address0{
+  color: blanchedalmond;
+
+}
 .footer-nav__address,
 .footer-nav__address1 {
   display: inline-block;

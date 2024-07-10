@@ -10,17 +10,18 @@ const Skiplink = () => {
 };
 const linames = [
   {
-    name: "Home",
+    name: "Personal Intro",
     path: "/",
   },
   {
-    name: "About",
-    path: "/about.html",
+    name: "Current",
+    path: "/",
   },
   {
-    name: "Roses",
-    path: "/Roses.html",
+    name: "Past",
+    path: "/about.html",
   },
+  
 ];
 
 

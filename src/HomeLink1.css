@@ -1,21 +1,22 @@
 .home__tabs {
   display: flex;
 }
-h2{
-  font-family: "Lucida Handwriting", cursive;
-}
+ 
 .home__tab {
   padding: 10px;
   margin-right: 10px;
   cursor: pointer;
 }
+.dark .home__tab {
+  font-size: 1.3rem;
+}
 
 .home__tab.active {
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid #80C4E9;
 }
 
 .home__tab:hover {
-  color: #000;
+  color: #80C4E9;
 }
 
 .homelink1 {
@@ -26,19 +27,40 @@ h2{
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  line-height: 1.8; /* Increase line height for better readability */
 }
 
 .homelink1 .home__image {
   width: 300px;
-  height: 300px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   margin-bottom: 20px;
   border-radius: 5px;
 }
 
 .homelink1 .home__description {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.2rem; /* Adjust font size if needed */
   line-height: 1.5;
   color: #666;
+  white-space: pre-line; /* Enable line breaks in the description */
+  margin-bottom: 20px; /* Add some margin below the description */
+}
+
+/* Add some margin between the tabs and the content */
+.home__content {
+  margin-top: 20px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container .home__image {
+  margin: 10px;
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: contain;
 }

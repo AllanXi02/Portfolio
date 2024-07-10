@@ -3,26 +3,86 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: bisque;
+  background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
   border: 2px solid saddlebrown;
   margin-top: 1rem;
+  transition: all 0.3s ease-in-out;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
-.about__title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
 
 .about__description {
   font-size: 1.2rem;
-  line-height: 1.5;
-  max-width: 600px;
-  text-align: center;
+  line-height: 1.8;
+  max-width: 800px;
+  text-align: left;
+  color: #333;
+  animation: slideIn 1s ease-in-out;
+  margin-bottom: 20px;
 }
-/* Dark mode CSS styles for About */
+
+.about__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.project + .project {
+  margin-top: 20px; /* Add margin to separate projects */
+}
+
 .dark .about {
   background-color: #333;
   border-color: #555;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: aliceblue;
+}
+
+.dark .about__description {
+  color: #ccc;
+  font-size: larger;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 10px;
+  }
+
+  .about__title {
+    font-size: 1.8rem;
+    
+  }
+
+  .about__description {
+    font-size: 1rem;
+  }
+
+  .about__image {
+    width: 100%;
+  }
 }

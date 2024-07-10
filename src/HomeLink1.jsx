@@ -1,19 +1,26 @@
 import React, { useState, useEffect } from 'react';
- import"./HomeLink1.css";
+import "./HomeLink1.css";
+import AIImage1 from './imgs/AI0.png';
+import AIImage2 from './imgs/AI1.png';
+import AIImage3 from './imgs/AI4.png';
+import AVPImage1 from './imgs/AVP0.png';
+import AVPImage2 from './imgs/AVP1.png';
+// import AVPImage3 from './imgs/AVP2.png';
+import BlockChainImage from './imgs/BlockChain0.png';
 
 function Homelink1() {
   const [activeTab, setActiveTab] = useState(0);
   const tabs = [
     {
-      title: 'Rosa rugosa alba',
+      title: 'Immersive Application Development',
       content: <HomeSub1 />,
     },
     {
-      title: 'Rosa woodsii',
+      title: 'AI-Driven Frontend Code Generation',
       content: <HomeSub2 />,
     },
     {
-      title: 'Capitaine John Ingram',
+      title: 'Blockchain Project',
       content: <HomeSub3 />,
     },
   ];
@@ -34,10 +41,11 @@ function Homelink1() {
 
   return (
     <div className="home">
-      <h2 className="home__title">Rose Beloved</h2>
+      <h2 className="home__title">Current Projects</h2>
       <div className="home__tabs">
         {tabs.map((tab, index) => (
           <div
+            key={index}
             className={`home__tab ${activeTab === index ? 'active' : ''}`}
             onClick={() => setActiveTab(index)}
             onKeyDown={handleKeyDown}
@@ -53,93 +61,77 @@ function Homelink1() {
     </div>
   );
 }
+
 function HomeSub1() {
   return (
     <div className="homelink1">
-      <img
-        src="https://images.unsplash.com/photo-1586963740689-b5928f8dda10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
-        alt="white rose"
-        className="home__image"
-      />
+      <div className="image-container">
+        <img
+          src={AVPImage1}
+          alt="Immersive Application"
+          className="home__image"
+        />
+        <img
+          src={AVPImage2}
+          alt="Immersive Application"
+          className="home__image"
+        />
+        {/* <img
+          src={AVPImage3}
+          alt="Immersive Application"
+          className="home__image"
+        /> */}
+      </div>
       <p className="home__description">
-      Description
-Also known by the common names, Japanese rose or beach tomato, this rose is native to East Asia and thrives along seashores with a tolerance for salty, sandy soils. A sprawling shrub, it produces large edible rose hips (hence, the ‘tomato’ common name) that can be made into rosehip jam. The species name ‘rugosa’ refers to the wrinkled appearance of the leaves.
-
- 
-
-Flowers
-White, five petals
-
- 
-
-Range
-North China, Korea, and Japan
-
- 
-
-Care
-Very adaptable and tolerant of different soils
-Partial shade to full sun
- 
+        <strong>Project Background:</strong> This project involves developing an immersive application based on visionOS. The application leverages virtual reality (VR) and augmented reality (AR) technologies to provide users with a novel interactive experience.
+        <br />
+        <strong>Project Progress:</strong> In the early stages, successful implementation of 3D interactions and expansion effects has been achieved. The current focus is on exploring the creation of more complex and refined 3D models to further enhance user experience.
       </p>
     </div>
   );
 }
+
 function HomeSub2() {
   return (
     <div className="homelink1">
-      <img
-        src="https://images.unsplash.com/photo-1554486840-db3a33d9318e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fHJvc2V8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-        alt="Rosa woodsili"
-        className="home__image"
-      />
+      <div className="image-container">
+        <img
+          src={AIImage1}
+          alt="AI-Driven Frontend Code Generation"
+          className="home__image"
+        />
+        <img
+          src={AIImage2}
+          alt="AI-Driven Frontend Code Generation"
+          className="home__image"
+        />
+        <img
+          src={AIImage3}
+          alt="AI-Driven Frontend Code Generation"
+          className="home__image"
+        />
+      </div>
       <p className="home__description">
-     
-
-Description
-A common North American wildflower, woods rose is a deciduous shrub. Both fast-growing and long-lived, you can find them in meadow edges and forests across the continent. It plays a critical role in its native ecosystems, supporting both pollinators and bird populations.
-
- 
-
-Flowers
-Five light to dark pink petals surrounding yellow stamen
-
- 
-
-Range
-North America
-
- 
-
-Care
-Partial to full sun
-Drought tolerant
+        <strong>Project Background:</strong> This project utilizes artificial intelligence to automate the generation of frontend interactive code, thereby improving development efficiency and code quality.
+        <br />
+        <strong>Project Progress:</strong> Basic 2D graphic generation has been successfully implemented. Efforts are now being directed towards exploring the application of 3D frameworks to provide richer and more complex frontend interactions.
       </p>
     </div>
   );
 }
+
 function HomeSub3() {
   return (
-    <div className="homelink1" aria-label="Kinds of Rose" >
+    <div className="homelink1" aria-label="Blockchain Project" >
       <img
-        src="https://images.unsplash.com/photo-1541143011610-fe5c3458686e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
-        alt="Capitaine John Ingram"
+        src={BlockChainImage}
+        alt="Blockchain Project"
         className="home__image"
       />
       <p className="home__description">
-      Description 
-Very fuzzy, mossed buds reveal many purple petals forming a double bloom. Be ready to have your noses charmed as these flowers are incredibly fragrant.
-
- 
-
-Hardiness Zone
-6-9
-
- 
-
-Care
-Full sun
-Well-draining soil
+        <strong>Project Background:</strong> Interest in blockchain technology has led to the development of a new blockchain project, named MEME coin, in collaboration with partners. The project aims to utilize the decentralization and transparency of blockchain technology to offer a new digital asset trading platform.
+        <br />
+        <strong>Project Progress:</strong> As the project manager, responsibilities include overall project planning and execution. Initial preparations for the project have been completed, and efforts are now focused on advancing to the launch stage.
       </p>
     </div>
   );

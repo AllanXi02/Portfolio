@@ -8,7 +8,7 @@
 
 .home__title {
   font-family: "Lucida Handwriting", cursive;
-  font-size: 2.5rem;
+   
   text-align: center;
   margin-bottom: 30px;
   color: #2c3e50;
@@ -20,41 +20,26 @@
   flex-direction: column;
   gap: 2rem;
 }
-.About__subtitle {
-  font-size: 2rem;
-}
-.dark .About__subtitle{
-  color: #F3CA52;
 
- 
-}
 .home__section {
   background: #ffffff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   animation: slideIn 1s ease-in-out;
-  margin-bottom: 2rem; /* Add margin to separate sections */
 }
 
- 
-.home__project-title {
+.home__subtitle {
   font-family: "Lucida Handwriting", cursive;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: #2980b9;
   margin-bottom: 10px;
 }
-
 
 .home__paragraph {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 15px;
-  
-}
-
-.project + .project {
-  margin-top: 20px; /* Add margin to separate projects */
 }
 
 @keyframes fadeIn {
@@ -88,7 +73,7 @@
     font-size: 1.8rem;
   }
 
-  .About__subtitle {
+  .home__subtitle {
     font-size: 1.5rem;
   }
 

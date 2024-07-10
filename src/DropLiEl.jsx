@@ -3,18 +3,18 @@ import React from "react";
 const DropLiEl = ({ liname, setPage }) => {
   const links = [
     {
-      name: `${liname} Link 1`,
+      name: `${liname} Project`,
       path: `/${liname}Sublink1`,
     },
     {
-      name: `${liname} Link 2`,
+      name: `${liname} Goal`,
       path: `/${liname}Sublink2`,
     },
   ];
   const list = links.map((link) => {
     return (
       // Only render li element if liname does not contain "Roses"
-      !liname.includes("Roses") && (
+      !liname.includes("Personal Intro") && (
         <li key={link.path} >
           <a
             href={link.path}
