@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.ab5f507b.css",
+    "main.js": "/Portfolio/static/js/main.24b94bf8.js",
+    "static/js/787.b3d32539.chunk.js": "/Portfolio/static/js/787.b3d32539.chunk.js",
+    "static/media/AI4.png": "/Portfolio/static/media/AI4.86411f00223f292f2172.png",
+    "static/media/AVP0.png": "/Portfolio/static/media/AVP0.6ef708dea73d65d46660.png",
+    "static/media/BlockChain0.png": "/Portfolio/static/media/BlockChain0.8ae5a52c0cb506f1d4ad.png",
+    "static/media/AVP1.png": "/Portfolio/static/media/AVP1.049a3a4b3584502bc155.png",
+    "static/media/RPC0.png": "/Portfolio/static/media/RPC0.219bd94dc9a6bcf05e0d.png",
+    "static/media/LicensePlate.png": "/Portfolio/static/media/LicensePlate.6c9df40ee615766e8c15.png",
+    "static/media/IOSProject0.png": "/Portfolio/static/media/IOSProject0.3202b5e4f4d015bdeab1.png",
+    "static/media/AI1.png": "/Portfolio/static/media/AI1.99ddfa0db55b56860323.png",
+    "static/media/AI0.png": "/Portfolio/static/media/AI0.0d9aeba5bd2540b4316d.png",
+    "index.html": "/Portfolio/index.html",
+    "main.ab5f507b.css.map": "/Portfolio/static/css/main.ab5f507b.css.map",
+    "main.24b94bf8.js.map": "/Portfolio/static/js/main.24b94bf8.js.map",
+    "787.b3d32539.chunk.js.map": "/Portfolio/static/js/787.b3d32539.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab5f507b.css",
+    "static/js/main.24b94bf8.js"
+  ]
+}
